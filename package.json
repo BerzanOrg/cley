@@ -1,9 +1,28 @@
 {
     "name": "cley",
     "version": "0.0.0",
-    "description": "",
-    "keywords": [],
+    "description": "Best Framework For Building CLI Tools",
+    "keywords": [
+        "cli",
+        "console",
+        "term",
+        "terminal",
+        "command line",
+        "commander",
+        "command",
+        "parser",
+        "args"
+    ],
     "license": "MIT",
+    "author": {
+        "name": "Berzan",
+        "url": "https://berzan.org",
+        "email": "berzan@tutanota.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BerzanOrg/cley"
+    },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
