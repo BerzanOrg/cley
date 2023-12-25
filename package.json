@@ -1,6 +1,6 @@
 {
     "name": "cley",
-    "version": "0.0.0",
+    "version": "0.0.0-rc-2",
     "description": "Best Framework For Building CLI Tools",
     "keywords": [
         "cli",
@@ -23,9 +23,7 @@
         "type": "git",
         "url": "https://github.com/BerzanOrg/cley"
     },
-    "bin": {
-        "cley": "dist/npx.js"
-    },
+    "bin":  "dist/npx.js",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
