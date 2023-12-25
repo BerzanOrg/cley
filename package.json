@@ -23,17 +23,24 @@
         "type": "git",
         "url": "https://github.com/BerzanOrg/cley"
     },
+    "bin": {
+        "cley": "dist/npx.js"
+    },
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
         "dist"
     ],
     "scripts": {
-        "build": "rm -rf dist && tsc && esbuild src/index.ts --outfile=dist/index.js"
+        "clean": "rm -rf dist",
+        "build-script": "esbuild src/npx.ts --outfile=dist/npx.js",
+        "build-package": "esbuild src/index.ts --outfile=dist/index.js",
+        "declare-types": "tsc",
+        "build": "pnpm run clean && pnpm run declare-types && pnpm run build-script && pnpm run build-package"
     },
-    "dependencies": {},
     "devDependencies": {
-        "typescript": "^5.3.3",
-        "esbuild": "^0.19.10"
+        "@types/node": "^20.10.5",
+        "esbuild": "^0.19.10",
+        "typescript": "^5.3.3"
     }
 }
